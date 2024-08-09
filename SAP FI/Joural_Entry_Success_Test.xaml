@@ -1,0 +1,237 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Joural_Entry_Success_Test" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1347.2,3311.2" sap2010:WorkflowViewState.IdRef="Joural_Entry_Success_Test_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Testing</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>UiPath.Testing</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Joural_Entry_Success_Test" sap:VirtualizedContainerService.HintSize="608,3246" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="PostingDate" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="546,104.4" sap2010:WorkflowViewState.IdRef="Sequence_2">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="546,2644.4" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uix:NApplicationCard AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Browser Chrome: Home" sap:VirtualizedContainerService.HintSize="484,2533.2" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V2" WindowResize="Maximize">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,2315.2" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NClick ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#Shell-home" DesignTimeRectangle="1446, 280, 188, 58" DesignTimeScaleFactor="1.25" ElementType="ListItem" FriendlyName="'unchecked'" FullSelectorArgument="&lt;webctrl ui5-class='sap.ushell.ui.launchpad.AnchorItem' ui5p-title='Journal Entries' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.ushell.ui.launchpad.AnchorItem' ui5p-title='Journal Entries' tag='LI' type='' class='sapUshellAnchorItem' aaname='' check:innerText='Journal Entries' /&gt;" Guid="d1f72667-ff74-4ede-9a42-22802fd592c4" InformativeScreenshot="fbb1825a4799503919e156f8d0b4c6ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Manage Journal Entries'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#Shell-home" DesignTimeRectangle="308, 361, 220, 220" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'Manage Journal Entries'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' ui5p-header='Manage Journal Entries' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.GenericTile' ui5p-header='Manage Journal Entries' tag='DIV' type='' class='sapMGT sapMGTStateLoaded sapMGTScopeDisplay OneByOne sapMPointer' aaname='' check:innerText='Manage Journal Entries' /&gt;" Guid="e8f7e848-ae3a-4711-835d-a157a1351f4e" InformativeScreenshot="5353cff35f4aaf3686e4e3d33ee28c64.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Home' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'Contains 1 token =1710'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage" DesignTimeRectangle="69, 406, 251, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'Contains 1 token =1710'" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-CompanyCode' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-CompanyCode' tag='DIV' type='' class='sapMInputBase sapMInputBaseHeightMargin sapMInput sapMMultiInput sapMMultiInputHasTokens sapMInputBaseHasEndIcons' aaname='' /&gt;" Guid="72b99c72-835b-417c-b995-c101abe9cc8c" InformativeScreenshot="e3d0682e4a7b987e3805760c4bbcf1aa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'SAP.UI.CORE.ICON'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage&amp;/?sap-iapp-state=AS0P8T0LB8H4TYUBZ5WX7Q489UJT792OXDLJM1NF" DesignTimeRectangle="1092, 408, 40, 30" DesignTimeScaleFactor="1.25" FriendlyName="'SAP.UI.CORE.ICON'" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-vhi' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-vhi' tag='SPAN' type='' class='sapUiIcon sapUiIconMirrorInRTL sapUiIconPointer sapMInputBaseIcon' aaname='' /&gt;" Guid="fd4d9254-ce95-4686-adaf-09f8e04a8e0b" InformativeScreenshot="0497a7c1c0013cb9d6a1c90c4a278ebd.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'SAP.M.INPUT __input16'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,220.8" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Text="1989" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage&amp;/?sap-iapp-state=AS0P8T0LB8H4TYUBZ5WX7Q489UJT792OXDLJM1NF" DesignTimeRectangle="1200, 464, 526, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FriendlyName="'SAP.M.INPUT __input16'" FullSelectorArgument="&lt;webctrl ui5-type='Input' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-type='Input' tag='DIV' type='' class='sapMInputBase sapMInputBaseHeightMargin sapMInput sapMFocus sapMInputFocused' aaname='' /&gt;" Guid="8a11cc94-ce21-46a5-9d64-4b3915410270" InformativeScreenshot="46cf1d44f0b99ab754a39dc5180c4e34.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTypeInto.Target>
+              </uix:NTypeInto>
+              <uix:NClick ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage&amp;/?sap-iapp-state=AS0P8T0LB8H4TYUBZ5WX7Q489UJT792OXDLJM1NF" DesignTimeRectangle="1832, 1220, 43, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-valueHelpDialog-ok' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-filterItemControl_BASIC-AccountingDocument-valueHelpDialog-ok' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBtnInverted sapMBarChild' aaname='OK' check:innerText='OK' /&gt;" Guid="bf624475-31bd-4223-b30f-62c97a439534" InformativeScreenshot="33fbddca64580c6cc6edeea06de99ffa.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click 'GoGo'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage&amp;/?sap-iapp-state=AS0P8T0LB8H4TYUBZ5WX7Q489UJT792OXDLJM1NF" DesignTimeRectangle="2447, 465, 42, 40" DesignTimeScaleFactor="1.25" ElementType="Button" FriendlyName="'GoGo'" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-btnGo' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--smartFilterBar-btnGo' tag='BUTTON' type='' class='sapMBtnBase sapMBtn sapMBtnInverted' aaname='Go' check:innerText='Go' /&gt;" Guid="d66b2a91-f8c1-4ef1-b06c-5d716f63b5bf" InformativeScreenshot="fcbe5f331f92722f2fafdc8a1c3cca6e.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click '100001989'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage" DesignTimeRectangle="110, 650, 108, 30" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'100001989'" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--headerTable' /&gt;&lt;webctrl ui5-colLabel='Journal Entry' ui5-tableRow='0' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--headerTable' /&gt;&lt;webctrl ui5-colLabel='Journal Entry' ui5-tableRow='0' tag='A' type='' class='sapMLnk sapMLnkMaxWidth sapUiCompSmartLink' aaname='100001989' check:innerText='100001989' /&gt;" Guid="9c3ea74f-b8de-4ca3-8e1b-130474fbe11d" ImageBase64="" InformativeScreenshot="4a96b05c665df6be442ccd45a9f25a3a.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="121, 618, 112, 21" FriendlyName="'Journal Entry'" FullSelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--headerTable' /&gt;&lt;webctrl ui5-class='sap.m.Label' /&gt;" FuzzySelectorArgument="&lt;webctrl id='application-AccountingDocument-manage-component---s1--headerTable' /&gt;&lt;webctrl ui5-class='sap.m.Label' tag='SPAN' type='' class='sapMLabel sapUiSelectable sapMLabelMaxWidth' aaname='' check:innerText='Journal Entry' /&gt;" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ClickType="Single" DisplayName="Click '100001989'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage" DesignTimeRectangle="249, 559, 125, 29" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'100001989'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Popover' /&gt;&lt;webctrl ui5-role='link' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Popover' /&gt;&lt;webctrl ui5-role='link' tag='A' type='' class='sapMLnk sapMLnkMaxWidth navigationPopoverTitle' aaname='100001989' check:innerText='100001989' /&gt;" Guid="9f15ee0e-dcd7-4467-8b5d-98c4860cce80" ImageBase64="" InformativeScreenshot="f8862c4e9f34739c30536bd6da17adcb.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="249, 628, 182, 21" ElementType="Text" FriendlyName="'Manage Journal Entries'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Popover' /&gt;&lt;webctrl ui5-role='link' ui5p-text='Manage Journal Entries' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Popover' /&gt;&lt;webctrl ui5-role='link' ui5p-text='Manage Journal Entries' tag='A' type='' class='sapMLnk sapMLnkMaxWidth' aaname='Manage Journal Entries' check:innerText='Manage Journal Entries' /&gt;" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NHighlight Color="Gold" DisplayName="Highlight '12/28/2023'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NHighlight_2" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" Version="V3">
+                <uix:NHighlight.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-displayFactSheet?AccountingDocument=100001989&amp;AccountingDocumentCategory=&amp;AccountingDocumentCategoryName=Normal%2520document&amp;AccountingDocumentHeaderText=&amp;AccountingDocumentType=SA&amp;AccountingDocumentTypeName=G%252FL%2520Account%2520Document&amp;AmountInCoCodeCrcy=1000.00&amp;CoCodeCurrency=USD&amp;CompanyCode=1710&amp;CompanyCodeName=Company%2520Code%25201710&amp;CopilotKey=1710%252F2023%252F0100001989&amp;CreatedByUser=S4H_SD_DEM&amp;CreatedByUserName=Shirley%2520Sales&amp;FiscalYear=2023&amp;IntercompanyTransaction=&amp;LeadingLedger=0L&amp;Ledger=0L&amp;LedgerFiscalYear=2023&amp;LedgerGroupName=&amp;ParkedByUserName=&amp;PostingDate=2023-12-28T00%253A00%253A00.000Z&amp;ReferenceDocumentType=BKPF&amp;ReversalFunction=&amp;ReversalReasonName=&amp;TransactionCurrency=USD&amp;sap-navigation-scope-filter=F0717&amp;sap-xapp-state=ASU6S1TG8ITMFSG1UNS6KE23PNS7KG7T6NEZYHYF&amp;/detail/1710/2023/100001989" DesignTimeRectangle="350, 520, 88, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'12/28/2023'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Text' ui5p-text='12/28/2023' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Text' ui5p-text='12/28/2023' tag='SPAN' type='' class='sapMText sapUiSelectable sapMTextBreakWord sapMTextMaxWidth sapUiCompSmartFieldValue' aaname='12/28/2023' check:innerText='12/28/2023' /&gt;" Guid="93ce8ff3-c2dc-4561-9b1c-7bbaf638d393" ImageBase64="" InformativeScreenshot="8ddaf38b7bc1244e160db44034c6fd62.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="Selector, FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="902, 520, 246, 21" FriendlyName="'Company Code'" FullSelectorArgument="&lt;webctrl ui5-tooltip='Company Code' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-tooltip='Company Code' tag='SPAN' type='' class='sapMLabel sapUiSelectable sapMLabelWrapped sapMLabelMaxWidth sapMLabelDisplayOnly' aaname='' check:innerText='Company Code' /&gt;" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NHighlight.Target>
+              </uix:NHighlight>
+              <uix:NGetText DisplayName="Get Text 'Journal Entry Date'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="db389c6f-fe64-4a54-b0de-5b3a6fbb84f5" TextString="[PostingDate]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#AccountingDocument-manage?AccountingDocument=100001989&amp;CompanyCode=1710&amp;FiscalYear=2023&amp;sap-navigation-scope-filter=F0717&amp;/detail/1710/2023/100001989" DesignTimeRectangle="350, 520, 88, 21" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'12/28/2023'" FullSelectorArgument="&lt;webctrl ui5-class='sap.m.Text' ui5p-text='12/28/2023' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-class='sap.m.Text' ui5p-text='12/28/2023' tag='SPAN' type='' class='sapMText sapUiSelectable sapMTextBreakWord sapMTextMaxWidth sapUiCompSmartFieldValue' /&gt;" Guid="6a7d0399-c73c-45f9-add9-e2f0a81889fb" ImageBase64="" InformativeScreenshot="e053041ede28796836192dc138372691.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Manage Journal Entries' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                        <uix:Target DesignTimeRectangle="89, 520, 246, 21" FriendlyName="'Journal Entry Date'" FullSelectorArgument="&lt;webctrl ui5-tooltip='Journal Entry Date' /&gt;" FuzzySelectorArgument="&lt;webctrl ui5-tooltip='Journal Entry Date' tag='SPAN' type='' class='sapMLabel sapUiSelectable sapMLabelWrapped sapMLabelMaxWidth sapMLabelDisplayOnly' aaname='' check:innerText='Journal Entry Date' /&gt;" ImageBase64="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" SearchSteps="Selector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="37530e82a00d4a2ff7df7345d088160e.jpg" Selector="&lt;html app='chrome.exe' title='Home' /&gt;" Title="Home" Url="https://vhcals4hci.dummy.nodomain:44351/sap/bc/ui5_ui5/ui2/ushell/shells/abap/FioriLaunchpad.html#Shell-home" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="546,306" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <uta:VerifyExpressionWithOperator AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression with Operator" sap:VirtualizedContainerService.HintSize="388,194.8" sap2010:WorkflowViewState.IdRef="VerifyExpressionWithOperator_1" Operator="Contains" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+        <uta:VerifyExpressionWithOperator.FirstExpression>
+          <InArgument x:TypeArguments="x:String">[PostingDate]</InArgument>
+        </uta:VerifyExpressionWithOperator.FirstExpression>
+        <uta:VerifyExpressionWithOperator.SecondExpression>
+          <InArgument x:TypeArguments="x:String">["12/28/2023"]</InArgument>
+        </uta:VerifyExpressionWithOperator.SecondExpression>
+      </uta:VerifyExpressionWithOperator>
+    </Sequence>
+  </Sequence>
+</Activity>

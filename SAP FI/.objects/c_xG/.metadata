@@ -1,0 +1,11 @@
+﻿{
+  "Id": "c_xGazftpEerMC1ZMfzSgA",
+  "Reference": "fl9T5DFQZ0SwcinpBaR67Q/c_xGazftpEerMC1ZMfzSgA",
+  "Name": "WinGui Transaction",
+  "Type": "App",
+  "Created": "2024-06-07T14:19:06.4070748Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2024-06-07T14:19:06.4070748Z"
+}

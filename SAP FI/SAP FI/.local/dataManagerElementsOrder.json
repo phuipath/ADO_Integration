@@ -1,0 +1,27 @@
+{
+  "Workflows": [
+    {
+      "Path": null,
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": null,
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Create_SAP_JournalEntry_DocumentReversal.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dtGoogleSheetsData&Sequence_1",
+        "FiCompCode&Sequence_1",
+        "FIDocNum&Sequence_1",
+        "SAPReturnMsg&Sequence_8",
+        "SAPReturnData&Sequence_8",
+        "ReverseDoc&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    }
+  ]
+}
