@@ -45,8 +45,7 @@ steps:
   continueOnError: true
   inputs:
     testTarget: 'TestSet'
-    testSet: 'Full Set'
-   # testSet: 'LB-ResortCheck'
+    testSet: 'Create_SAP_JournalEntry_DocumentReversal'
     orchestratorConnection: 'OrchestratorDevOpsConnection'
     folderName: 'sandbox/Phil Harris'
     traceLevel: 'Information'
