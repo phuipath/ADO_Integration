@@ -4,21 +4,57 @@
 # https://aka.ms/yaml
 
 trigger:
-- task: UiPathPack@4
-  inputs:
-    versionType: 'AutoVersion'
-    projectJsonPath: '$(Build.SourcesDirectory)'
-    orchestratorConnection: 'OrchestratorDevOpsConnection'
-    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
-- task: UiPathDeploy@4
-  inputs:
-    orchestratorConnection: 'OrchestratorDevOpsConnection'
-    packagesPath: '$(Build_ArtifactStagingDirectory)\Output'
-    folderName: 'sandbox/Phil Harris'
 - main
 
-pool:
+pool: 
   vmImage: windows-latest
 
 steps:
+- script: echo 'Hello, world! projectJsonPath - $(Build.SourcesDirectory) outputPath - $(Build.ArtifactStagingDirectory)\Output '
+  displayName: 'Run a one-line script'
+
+- task: UiPathInstallPlatform@4
+  inputs:
+    cliVersion: 'WIN_23.10.8753.32995'
+
+#- task: UiPathPack@4
+#  inputs:
+#    versionType: 'CurrentVersion'
+#    projectJsonPath: '$(Build.SourcesDirectory)'
+#    outputType: 'Tests'
+#    orchestratorConnection: 'OrchestratorDevOpsConnection'
+#    outputPath: '$(Build.ArtifactStagingDirectory)\Output'
+#    traceLevel: 'Information'
+  
+- task: CmdLine@2
+  displayName: 'List files'
+  inputs:
+    script: |
+      for %%f in ( "$(Build.SourcesDirectory)\*" ) do @echo %%f
+
+#- task: UiPathTest@4
+#  continueOnError: true
+#  inputs:
+#    testTarget: 'TestProject'
+#    testProjectPath: '$(Build.SourcesDirectory)' # Required only when testTarget = TestProject
+#    orchestratorConnection: 'BratlienADOv1'
+#    folderName: 'sandbox/Phil Harris'
+#    traceLevel: 'Information'
+
+- task: UiPathTest@4
+  continueOnError: true
+  inputs:
+    testTarget: 'TestSet'
+    testSet: 'Full Set'
+   # testSet: 'LB-ResortCheck'
+    orchestratorConnection: 'OrchestratorDevOpsConnection'
+    folderName: 'sandbox/Phil Harris'
+    traceLevel: 'Information'
+    
+- task: PublishBuildArtifacts@1
+  continueOnError: true
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'BuildPipelineArtifact'
+    publishLocation: 'Container'
 
