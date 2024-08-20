@@ -45,7 +45,7 @@ steps:
 #  inputs:
 #    testTarget: 'TestProject'
 #    testProjectPath: '$(Build.SourcesDirectory)' # Required only when testTarget = TestProject
-#    orchestratorConnection: 'BratlienADOv1'
+#    orchestratorConnection: 'OrchestratorDevOpsConnection'
 #    folderName: 'sandbox/Phil Harris'
 #    traceLevel: 'Information'
 
