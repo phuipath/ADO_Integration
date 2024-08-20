@@ -14,11 +14,11 @@ steps:
     cliVersion: 'WIN_23.10.8753.32995'
     cliNupkgPath: 
 
-- task: UiPathAssets@4
-  inputs:
-    orchestratorConnection: 'OrchestratorDevOpsConnection'
-    folderName: 'sandbox/Phil Harris'
-    assetActionType: 'Deploy'
+# task: UiPathAssets@4
+# inputs:
+#   orchestratorConnection: 'OrchestratorDevOpsConnection'
+#   folderName: 'sandbox/Phil Harris'
+#   assetActionType: 'Deploy'
 #    csvFile: 'OrchestratorAssets'
     
 # Start with a minimal pipeline that you can customize to build and deploy your code.
