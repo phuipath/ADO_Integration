@@ -54,7 +54,7 @@ steps:
   inputs:
     testTarget: 'TestSet'
     testSet: 'Create_SAP_JournalEntry_DocumentReversal'
-    orchestratorConnection: 'OrchestratorDevOpsConnection'
+    orchestratorConnection: 'PubSecDevOpsAppAPI'
     folderName: 'Sandbox/Phil Harris'
     traceLevel: 'Information'
     
