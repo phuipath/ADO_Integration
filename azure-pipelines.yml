@@ -55,7 +55,7 @@ steps:
     testTarget: 'TestSet'
     testSet: 'Create_SAP_JournalEntry_DocumentReversal'
     orchestratorConnection: 'OrchestratorDevOpsConnection'
-    folderName: 'sandbox/Phil Harris'
+    folderName: 'Phil Harris'
     traceLevel: 'Information'
     
 - task: PublishBuildArtifacts@1
