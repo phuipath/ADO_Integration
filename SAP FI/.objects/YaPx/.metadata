@@ -1,0 +1,14 @@
+﻿{
+  "Id": "YaPxPiLWV0K4nN6PWZJspg",
+  "Reference": "fl9T5DFQZ0SwcinpBaR67Q/YaPxPiLWV0K4nN6PWZJspg",
+  "Name": "SAP Win GUI x64",
+  "Type": "App",
+  "Created": "2024-08-22T14:39:51.4587728Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "Updated": "2024-08-22T14:42:08.1294936Z",
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.4.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

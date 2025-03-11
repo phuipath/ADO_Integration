@@ -1,14 +1,15 @@
 {
-  "name": "SAP_FI_FB01_Journal Entry",
+  "name": "Public Sector Demo",
   "projectId": "bbf73fd3-6756-47ca-9c41-6352420e9153",
-  "description": "Retrieve Test data from Google Sheets and use it for testing FB01 Journal Entry and Document Reversal functionalities",
+  "description": "--- Part of PubSec DevOps Demo and Integrated with Git -- Retrieve Test data from Google Sheets and use it for testing FB01 Journal Entry and Document Reversal functionalities",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.Excel.Activities": "[2.20.2]",
-    "UiPath.GSuite.Activities": "[2.0.3]",
-    "UiPath.System.Activities": "[23.2.0-preview]",
-    "UiPath.Testing.Activities": "[23.2.0-preview]",
-    "UiPath.UIAutomation.Activities": "[23.2.0-preview]"
+    "UiPath.CodedWorkflows": "[24.10.1]",
+    "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.GSuite.Activities": "[2.8.22]",
+    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.Testing.Activities": "[24.10.4]",
+    "UiPath.UIAutomation.Activities": "[24.10.11]"
   },
   "webServices": [],
   "entitiesStores": [],
@@ -55,9 +56,35 @@
         "testCaseId": "152e986a-87ee-4f46-8bda-ed0f67220456",
         "testCaseType": "TestCase",
         "fileName": "Create_SAP_JournalEntry_DocumentReversal.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "76833587-0d1e-48c8-b39b-58e9897b88e2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "DLA Test Case.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5a05541e-2935-4557-aeb1-1f64a0f8855a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "TestCase.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a3950af2-b4a9-4318-99de-2ee2c00fb74e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Datatable scratch test.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "db88764e-75ae-4485-8b76-cee0e03945b6",
+        "testCaseType": "TestCase",
+        "fileName": "PS_TC_Delegate_Authority.xaml"
       }
     ],
-    "modernBehavior": true,
     "saveToCloud": false
   },
   "expressionLanguage": "VisualBasic",
