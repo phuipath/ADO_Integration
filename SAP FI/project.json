@@ -4,10 +4,9 @@
   "description": "--- Part of PubSec DevOps Demo and Integrated with Git -- Retrieve Test data from Google Sheets and use it for testing FB01 Journal Entry and Document Reversal functionalities",
   "main": "Main.xaml",
   "dependencies": {
-    "UiPath.CodedWorkflows": "[24.10.1]",
     "UiPath.Excel.Activities": "[2.24.4]",
-    "UiPath.GSuite.Activities": "[2.8.22]",
-    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.GSuite.Activities": "[3.0.10]",
+    "UiPath.System.Activities": "[25.2.2]",
     "UiPath.Testing.Activities": "[24.10.4]",
     "UiPath.UIAutomation.Activities": "[24.10.11]"
   },
