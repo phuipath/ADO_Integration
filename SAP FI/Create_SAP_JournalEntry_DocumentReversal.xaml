@@ -200,7 +200,7 @@
       <AssemblyReference>UiPath.Testing.RulesLibrary</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Create SAP FI Document using Google sheets Test Data" sap:VirtualizedContainerService.HintSize="1273,6715" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Create SAP FI Document using Google sheets Test Data" sap:VirtualizedContainerService.HintSize="1401,6715" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtGoogleSheetsData" />
       <Variable x:TypeArguments="x:String" Name="FiCompCode" />
@@ -314,7 +314,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="Putting another comment for testing purposees" DisplayName="Read Test Data from MS Excel" sap:VirtualizedContainerService.HintSize="581,673" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap2010:Annotation.AnnotationText="Putting " DisplayName="Read Test Data from MS Excel" sap:VirtualizedContainerService.HintSize="581,673" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
