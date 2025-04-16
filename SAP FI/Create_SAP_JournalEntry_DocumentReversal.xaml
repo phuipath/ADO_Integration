@@ -200,7 +200,7 @@
       <AssemblyReference>UiPath.Testing.RulesLibrary</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Create SAP FI Document using Google sheets Test Data" sap:VirtualizedContainerService.HintSize="1401,6715" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Create SAP FI Document using Google sheets Test Data" sap:VirtualizedContainerService.HintSize="1401,6820" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dtGoogleSheetsData" />
       <Variable x:TypeArguments="x:String" Name="FiCompCode" />
@@ -212,7 +212,7 @@
         <x:Boolean x:Key="IsPinned">False</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="581,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+    <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="581,85" sap2010:WorkflowViewState.IdRef="CommentOut_3">
       <ui:CommentOut.Body>
         <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="512,192" sap2010:WorkflowViewState.IdRef="Sequence_15">
           <sap:WorkflowViewStateService.ViewState>
@@ -314,7 +314,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="Putting inin and" DisplayName="Read Test Data from MS Excel" sap:VirtualizedContainerService.HintSize="581,673" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap2010:Annotation.AnnotationText="Putting inin and show some devops" DisplayName="Read Test Data from MS Excel" sap:VirtualizedContainerService.HintSize="581,673" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -339,14 +339,14 @@
         </ueab:ExcelApplicationCard.Body>
       </ueab:ExcelApplicationCard>
     </Sequence>
-    <Sequence DisplayName="Create Journal Entry in SAP WinGUI" sap:VirtualizedContainerService.HintSize="581,5708" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="Create Journal Entry in SAP WinGUI" sap:VirtualizedContainerService.HintSize="581,5785" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
           <x:Boolean x:Key="IsPinned">False</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Sequence DisplayName="Login to SAP GUI" sap:VirtualizedContainerService.HintSize="547,57" sap2010:WorkflowViewState.IdRef="Sequence_10">
+      <Sequence DisplayName="Login to SAP GUI" sap:VirtualizedContainerService.HintSize="547,101" sap2010:WorkflowViewState.IdRef="Sequence_10">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
             <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -380,13 +380,13 @@
           </sap:WorkflowViewStateService.ViewState>
         </ucas:Login>
       </Sequence>
-      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Post Document Header Data" sap:VirtualizedContainerService.HintSize="547,5559" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bbeaf6bb-ab72-4444-8996-feef685c6e9d" Version="V2">
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Post Document Header Data" sap:VirtualizedContainerService.HintSize="547,5592" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="bbeaf6bb-ab72-4444-8996-feef685c6e9d" Version="V2">
         <uix:NApplicationCard.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,5243" sap2010:WorkflowViewState.IdRef="Sequence_8">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="513,5276" sap2010:WorkflowViewState.IdRef="Sequence_8">
               <Sequence.Variables>
                 <Variable x:TypeArguments="x:String" Name="SAPReturnMsg" />
                 <Variable x:TypeArguments="s:String[]" Name="SAPReturnData" />
@@ -453,19 +453,19 @@
                   <uix:TargetAnchorable DesignTimeRectangle="252, 123, 32, 33" DesignTimeScaleFactor="1.25" ElementType="Button" FullSelectorArgument="&lt;sap id='tbar[1]/btn[14]' /&gt;" FuzzySelectorArgument="&lt;sap id='tbar[1]/btn[14]' /&gt;" Guid="5a616b28-831b-4f42-8f1b-a1a5a2b7a980" InformativeScreenshot="3e0f544c4bdaae55ae726c69d2d517f1.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter G/L Account Document: Add G/L account items' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                 </uix:NClick.Target>
               </uix:NClick>
-              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtGoogleSheetsData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="479,1622" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
+              <ui:ForEachRow ColumnNames="{x:Null}" CurrentIndex="{x:Null}" DataTable="[dtGoogleSheetsData]" DisplayName="For Each Row in Data Table" sap:VirtualizedContainerService.HintSize="479,1655" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
                 <ui:ForEachRow.Body>
                   <ActivityAction x:TypeArguments="sd:DataRow">
                     <ActivityAction.Argument>
                       <DelegateInArgument x:TypeArguments="sd:DataRow" Name="CurrentRow" />
                     </ActivityAction.Argument>
-                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="422,1424" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                    <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="422,1457" sap2010:WorkflowViewState.IdRef="Sequence_11">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Posting'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="bbeaf6bb-ab72-4444-8996-feef685c6e9d" Text="[CurrentRow.Item(7).ToString]" Version="V3">
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'CTextField Posting'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,251" sap2010:WorkflowViewState.IdRef="NTypeInto_8" ScopeIdentifier="bbeaf6bb-ab72-4444-8996-feef685c6e9d" Text="[CurrentRow.Item(7).ToString]" Version="V3">
                         <uix:NTypeInto.Target>
                           <uix:TargetAnchorable DesignTimeRectangle="131, 1114, 60, 33" DesignTimeScaleFactor="1.25" ElementType="InputBox" FullSelectorArgument="&lt;sap id='usr/ctxtRF05A-NEWBS' /&gt;" FuzzySelectorArgument="&lt;sap id='usr/ctxtRF05A-NEWBS' /&gt;" Guid="bd864b09-fbf0-4068-9b5a-8fcec6332479" InformativeScreenshot="dd96fd770ef72664541de79240c623b4.png" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Enter G/L Account Document: Display Overview' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
                         </uix:NTypeInto.Target>
