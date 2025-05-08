@@ -314,7 +314,7 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:CommentOut>
-    <Sequence sap2010:Annotation.AnnotationText="Putting in and show some" DisplayName="Read Test Data from MS Excel" sap:VirtualizedContainerService.HintSize="581,673" sap2010:WorkflowViewState.IdRef="Sequence_14">
+    <Sequence sap2010:Annotation.AnnotationText="Putting in and show some stuff" DisplayName="Read Test Data from MS Excel" sap:VirtualizedContainerService.HintSize="581,673" sap2010:WorkflowViewState.IdRef="Sequence_14">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
