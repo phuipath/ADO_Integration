@@ -1,1 +1,1 @@
-{}
+{"Gmail.SandBox_Rahul_Sridharan_uptestsuite_gmail_com":{"Resource":"Connection","Key":"03bdd54f-9541-43fd-8c58-ee42cbcf4c9a","Description":null,"Value":{"ConnectionId":{"DefaultValue":"03bdd54f-9541-43fd-8c58-ee42cbcf4c9a","IsExpression":false,"DisplayName":"Connection","Description":"The connection to be used"}},"Metadata":{"Connector":"uipath-google-gmail","ConnectionType":"Gmail","BindingsVersion":"2.1"}}}
